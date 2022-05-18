@@ -5,7 +5,7 @@ html {
 
 //Font
 body {
-    font-family: 'Open Sans',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
 }
 
@@ -34,29 +34,38 @@ button {
 }
 
 //letter-spacing
-$sizes: 1,2,3,4,5,10,15;
+$sizes: 1,
+2,
+3,
+4,
+5,
+10,
+15;
 
 @each $size in $sizes {
-  .ls-#{$size} {
-    letter-spacing: #{$size + 'px'};
-  }
+    .ls-#{$size} {
+        letter-spacing: #{$size + 'px'};
+    }
 }
 
 //Content
-nav{
+nav {
     z-index: 999;
 }
+
 .home {
     background-image: url(/assets/main-bg.jpg);
     height: 100%;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    .content{
+
+    .content {
         padding-top: 52px;
         height: 100%;
     }
-    .story{
+
+    .story {
         bottom: 0;
     }
 }
@@ -67,30 +76,37 @@ nav{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    .special{
+
+    .special {
         top: 20%;
     }
-    .carousel-indicators [data-bs-target]{
+
+    .carousel-indicators [data-bs-target] {
         height: 10px;
         width: 10px;
         border-radius: 50%;
-        
+
         background-color: black;
-    
+
     }
+
     .carousel-light .carousel-indicators [data-bs-target] {
-        background-color:white;
+        background-color: white;
     }
+
     .carousel-control-prev-icon {
         background-image: url(/assets/switch-left.svg);
-        
+
     }
+
     .carousel-control-next-icon {
         background-image: url(/assets/switch-right.svg);
     }
+
     .carousel-control-prev {
         left: -65px;
     }
+
     .carousel-control-next {
         right: -65px;
     }
@@ -102,6 +118,15 @@ nav{
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+
+    .special {
+        top: 20%;
+    }
+
+    .tinggi {
+        top: 50%;
+        z-index: 999;
+    }
 }
 
 .requirements {
@@ -110,6 +135,19 @@ nav{
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+
+    .spotlight {
+        background-image: url(/assets/top-score-bg\(2\).png);
+        height: 100%;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: rotate(180deg);
+    }
+
+    .tinggi {
+        top: 10%;
+    }
 }
 
 .topscore {
@@ -135,4 +173,3 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
