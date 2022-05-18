@@ -13084,6 +13084,10 @@ button {
   letter-spacing: 15px;
 }
 
+nav {
+  z-index: 999;
+}
+
 .home {
   background-image: url(/assets/main-bg.jpg);
   height: 100%;
@@ -13094,6 +13098,9 @@ button {
 .home .content {
   padding-top: 52px;
   height: 100%;
+}
+.home .story {
+  bottom: 0;
 }
 
 .thegames {

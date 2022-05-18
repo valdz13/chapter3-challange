@@ -42,7 +42,10 @@ $sizes: 1,2,3,4,5,10,15;
   }
 }
 
-//Content Background
+//Content
+nav{
+    z-index: 999;
+}
 .home {
     background-image: url(/assets/main-bg.jpg);
     height: 100%;
@@ -52,6 +55,9 @@ $sizes: 1,2,3,4,5,10,15;
     .content{
         padding-top: 52px;
         height: 100%;
+    }
+    .story{
+        bottom: 0;
     }
 }
 
