@@ -13110,6 +13110,30 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.thegames .special {
+  top: 20%;
+}
+.thegames .carousel-indicators [data-bs-target] {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: black;
+}
+.thegames .carousel-light .carousel-indicators [data-bs-target] {
+  background-color: white;
+}
+.thegames .carousel-control-prev-icon {
+  background-image: url(/assets/switch-left.svg);
+}
+.thegames .carousel-control-next-icon {
+  background-image: url(/assets/switch-right.svg);
+}
+.thegames .carousel-control-prev {
+  left: -65px;
+}
+.thegames .carousel-control-next {
+  right: -65px;
+}
 
 .features {
   background-image: url(/assets/features.jpg);

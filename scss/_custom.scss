@@ -67,6 +67,33 @@ nav{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    .special{
+        top: 20%;
+    }
+    .carousel-indicators [data-bs-target]{
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        
+        background-color: black;
+    
+    }
+    .carousel-light .carousel-indicators [data-bs-target] {
+        background-color:white;
+    }
+    .carousel-control-prev-icon {
+        background-image: url(/assets/switch-left.svg);
+        
+    }
+    .carousel-control-next-icon {
+        background-image: url(/assets/switch-right.svg);
+    }
+    .carousel-control-prev {
+        left: -65px;
+    }
+    .carousel-control-next {
+        right: -65px;
+    }
 }
 
 .features {
