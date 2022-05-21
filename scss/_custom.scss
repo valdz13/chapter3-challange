@@ -148,6 +148,9 @@ nav {
     .tinggi {
         top: 10%;
     }
+        .konten{
+            z-index: 999;
+        }
 }
 
 .topscore {
@@ -163,6 +166,9 @@ nav {
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
+        .tinggi {
+            top: 40%;
+        }
     }
 }
 
