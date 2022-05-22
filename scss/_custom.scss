@@ -119,13 +119,15 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
 
-    .special {
-        top: 20%;
-    }
+    hr {
+        height: 3px;
+        width: 130px;
+        transform: rotate(90deg);
+        left: -45px;
+        top: 72px;
+        opacity: 1;
+        margin: 0;
 
-    .tinggi {
-        top: 50%;
-        z-index: 999;
     }
 }
 
@@ -145,12 +147,9 @@ nav {
         transform: rotate(180deg);
     }
 
-    .tinggi {
-        top: 10%;
+    .warnaTabel {
+        border: 1px solid gray;
     }
-        .konten{
-            z-index: 999;
-        }
 }
 
 .topscore {
@@ -166,16 +165,60 @@ nav {
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
-        .tinggi {
-            top: 40%;
-        }
+    }
+
+    .topscore-img {
+        width: 65px;
+        height: 65px;
+        top: -2px;
+        left: 6px;
+    }
+
+    .circle-img {
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        background-color: $yellow;
+    }
+
+}
+
+.spotlight-skull {
+    width: 415px;
+    height: 646px;
+    left: 150px;
+}
+
+.form-nostyle {
+    background-color: inherit;
+    border: none;
+    color: $yellow;
+    height: 20px;
+
+    &:focus {
+        background-color: inherit;
+        border: none;
+        color: $yellow;
     }
 }
 
-.newsletter {
-    background-image: url(/assets/newsletter.png);
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.text-sz{
+    font-size: 10px;
+}
+.bg-newsletter{
+    background-color:#080A0B;
+    ;
+}
+
+footer{
+    a{
+        text-decoration: none;
+        color: inherit;
+        &:hover{
+            color: $yellow;
+        }
+    }
+    text-sz{
+        font-size: 12px;
+    }
 }

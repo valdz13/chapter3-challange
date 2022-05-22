@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Valdi.Challenge3</title>
     <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./bootstrap-icons/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -47,8 +48,8 @@
         </div>
     </nav>
 
-    <div class=" container-fluid home position-relative">
-        <div class="text-light content row justify-content-center align-items-center">
+    <div class="home position-relative">
+        <div class="text-light content row justify-content-center align-items-center w-100">
             <div class="col-12">
                 <div class="row text-center">
                     <div class="col-12 p-16">
@@ -76,7 +77,7 @@
     </div>
 
     <div class=" thegames">
-        <div class="row h-100">
+        <div class="row h-100 w-100">
             <div class="col-4 text-light position-relative">
                 <div class="special ms-64 position-absolute">
                     <h3 class="ls-3">What's so special?</h3>
@@ -133,74 +134,183 @@
 
     </div>
 
-    <div class=" container-fluid features position-relative">
-        <div class="row">
+    <div class="features">
+        <div class="row w-100 h-100">
             <div class="col-6">
 
             </div>
-            <div class="col-6">
-                <div class=" special ms-64 position-absolute">
-                    <h3 class="ls-3 text-light">What's so special?</h3>
-                    <h1 class="ls-10 text-light">FEATURES</h1>
-                </div>
+            <div class="col-6 d-flex align-items-center">
                 <div class="row">
-                    <div class="col-1">
 
+                    <div class="col-12">
+                        <h3 class="ls-3 text-light">What's so special?</h3>
+                        <h1 class="ls-10 text-light">FEATURES</h1>
                     </div>
-                    <div class="col-7">
-                        <div class=" tinggi ms-32 position-absolute">
-                            <h4 class="text-warning ls-1">TRADITIONAL GAMES</h4>
-                            <p class="text-light">If you miss your childhood, we provide<br>traditional games here</p>
-                            <h4 class="text-warning pt-5 ls-2">GAME SUIT</h4>
-                            <h4 class="text-warning pt-5 ls-5">TBD</h4>
+                    <div class="col-12">
+                        <div class="row">
+
+                            <div class="col-7 position-relative">
+                                <div class="">
+                                    <div class="d-flex">
+                                        <i class="bi bi-circle-fill text-light me-5"></i>
+                                        <hr class="text-white position-absolute">
+                                        <div>
+                                            <h4 class="text-warning ls-1">TRADITIONAL GAMES</h4>
+                                            <p class="text-light">If you miss your childhood, we provide<br>
+                                                traditional games here</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <i class="bi bi-circle text-light me-5"></i>
+                                        <h4 class="text-warning">GAME SUIT</h4>
+                                    </div>
+                                    <div class="d-flex">
+                                        <i class="bi bi-circle text-light me-5"></i>
+                                        <h4 class="text-warning">TBD</h4>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </div>
 
-    <div class=" container-fluid p-0 requirements position-relative">
-        <div class="container-fluid spotlight"></div>
-        <div class="row">
-            <div class="col-12 position-absolute tinggi">
-                <div class="text-center text-light ls-3">
+    <div class="p-0 requirements position-relative">
+        <div class="spotlight"></div>
+        <div class="container-fluid position-absolute top-0 h-100">
+            <div class="row m-32">
+                <div class="col-12 text-center text-light ls-3">
                     <h3>Can My Computer Run this game?</h3>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-6">
-                <div class="row">
-                    <div class="col-12 position-absolute tinggi ms-64 mt-64">
-                        <h1 class="text-light ls-5">SYSTEM<br>REQUIREMENTS</h1>
+                <div class="col-12">
+                    <h1 class="text-light ls-5">SYSTEM<br>REQUIREMENTS</h1>
+                </div>
+                <div class="col-12">
+                    <div class="w-50">
+                        <table class="table table-bordered warnaTabel">
+                            <tr>
+                                <td>
+                                    <h3 class="ls-2 text-warning">OS:</h3>
+                                    <p class="text-white">Windows 7 64-bit only<br>
+                                        (No OSX support at this time)
+                                    </p>
+                                </td>
+                                <td>
+                                    <h3 class="ls-2 text-warning">PROCESSOR:</h3>
+                                    <p class="text-white">Intel Core 2 Duo @ 2.4 GHZ or<br>
+                                        AMD Athlon X2 @ 2.8 GHZ
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3 class="ls-2 text-warning">mEMORY:</h3>
+                                    <p class="text-white">4 GB RAM</p>
+                                </td>
+                                <td>
+                                    <h3 class="ls-2 text-warning">storage:</h3>
+                                    <p class="text-white">8 GB available space</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <h3 class="ls-2 text-warning">GRAPHICS:</h3>
+                                    <p class="text-white">NVIDIA GeForce GTX 660 2GB or<br>
+                                        AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-6 position-absolute ms-64 mt-64">
-                <p class="text-warning konten"> OS :</p>
-                <p class="text-light konten">Windows 7 64-bit only<br>(No OSX support at this time)</p>
-            </div>
-        </div>
     </div>
 
-    <div class="container-fluid p-0 topscore position-relative">
-
-        <div class="container-fluid spotlight">
-            <div class="row align-items-center">
-                <div class="col-6 vh-100 align-self-center">
-                    <div class="mx-auto my-auto d-block">
+    <div class="topscore">
+        <div class="spotlight">
+            <div class="row align-items-center h-100 w-100">
+                <div class="col-6 d-flex align-items-center justify-content-center">
+                    <div class="">
                         <h1 class="text-light">TOP SCORES</h1>
                         <p class="text-light">This top score from various games provided<br>on this platform</p>
-                        <button type="button" class="btn btn-warning w-15 ls-2">see more</button>
+                        <button type="button" class="btn btn-warning w-40 ls-2">see more</button>
                     </div>
                 </div>
                 <div class="col-6">
-
+                    <div class="row">
+                        <div class="col-12 m-2 d-flex justify-content-end">
+                            <div class="card w-75 bg-dark">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-3 position-relative">
+                                            <div class="circle-img"></div>
+                                            <img src="./assets/evan-lahti.jpg" class=" rounded-circle topscore-img position-absolute" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <h4 class="text-warning m-0">Evan Lahti</h4>
+                                            <p class="text-muted m-0">PC Gamer</p>
+                                        </div>
+                                        <div class="col-2 text-end">
+                                            <img src="./assets/twitter-card.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="text-light mb-0 mt-2">“One of my gaming highlights of the year.”</p>
+                                            <p class="text-muted m-0">June 18, 2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 m-2 d-flex justify-content-start">
+                            <div class="card w-75 bg-dark">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-3 position-relative">
+                                            <div class="circle-img"></div>
+                                            <img src="./assets/jada-griffin.jpg" class=" rounded-circle topscore-img position-absolute" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <h4 class="text-warning m-0">Jada Griffin</h4>
+                                            <p class="text-muted m-0">Nerdreactor</p>
+                                        </div>
+                                        <div class="col-2 text-end">
+                                            <img src="./assets/twitter-card.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="text-light mb-0 mt-2">“The next big thing in the world of streaming and survival games.”</p>
+                                            <p class="text-muted m-0">July 10, 2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 m-2 d-flex justify-content-end">
+                            <div class="card w-75 bg-dark">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-3 position-relative">
+                                            <div class="circle-img"></div>
+                                            <img src="./assets/aaron-williams.jpg" class=" rounded-circle topscore-img position-absolute" alt="">
+                                        </div>
+                                        <div class="col-7">
+                                            <h4 class="text-warning m-0">Aaron Williams</h4>
+                                            <p class="text-muted m-0">Uproxx</p>
+                                        </div>
+                                        <div class="col-2 text-end">
+                                            <img src="./assets/twitter-card.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="text-light mb-0 mt-2">“Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”</p>
+                                            <p class="text-muted m-0">December 24, 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -208,32 +318,67 @@
 
     </div>
 
-    <div class="container-fluid newsletter">
-        <div class="row vh-100">
-            <div class="col-6">
-                <img src="assets/skull.png" class="img-thumbnail mx-auto my-auto d-block" alt="...">
+    <div class="bg-newsletter">
+        <div class="row w-100 p-64">
+            <div class="col-6 text-center">
+                <div>
+                    <img src="assets/skull.png" class="img-fluid">
+                    <img src="assets/Rectangle-skull.png" class="img-fluid position-absolute spotlight-skull" alt="">
+                </div>
             </div>
             <div class="col-6 text-light">
                 <h3>Want to stay in touch?</h3>
                 <h1>NEWSLETTER<br>SUBSCRIBE</h1>
-                <P>In order to start receiving our news, all you have to do is enter your email address. Everything else
+                <P>In order to start receiving our news, all you have to do is enter your email address. Everything
+                    else
                     will be taken care of by us. We will send you emails containing information about game. We don’t
                     spam.</P>
-                    <div class="d-flex">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Your email address"
-                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="row">
+                    <div class="col-7">
+                        <div class="bg-dark text-light rounded p-8">
+                            <p class="m-0 ms-8 text-muted text-sz">Your email address</p>
+                            <div class="input-group">
+                                <input type="text" class="form-control form-nostyle" placeholder="example@binar.co.id" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            </div>
                         </div>
-                        <button type="button" class="btn btn-warning w-20 ls-2">Subscribe now</button>
-                    </div> 
+                    </div>
+                    <div class="col-5">
+                        <button type="button" class="btn btn-warning w-100 h-100 ls-2">Subscribe now</button>
+                    </div>
+                </div>
             </div>
         </div>
-
-
-
-
     </div>
-
+    <footer>
+        <div class="container-fluid bg-newsletter">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-end text-light">
+                    <a href="" class="mx-16">MAIN</a>
+                    <a href="" class="mx-16">ABOUT</a>
+                    <a href="" class="mx-16">GAME FEATURES</a>
+                    <a href="" class="mx-16">SYSTEM REQUIREMENTS</a>
+                    <a href="" class="mx-16">QUOTES</a>
+                    <a href="" class="mx-16"><img src="./assets/facebook.svg" class="img-fluid"></a>
+                    <a href="" class="mx-16"><img src="./assets/twitter.svg" class="img-fluid"></a>
+                    <a href="" class="mx-16"><img src="./assets/vector.svg" class="img-fluid"></a>
+                    <a href="" class="mx-16"><img src="./assets/twitch.svg" class="img-fluid"></a>
+                </div>
+                <div class="col-12 px-4 text-white">
+                    <hr>
+                </div>
+                <div class="col-6 text-sz">
+                    <p class="ms-3"> © 2018 Your Games, Inc. All Rights Reserved</p>
+                </div>
+                <div class="col-6 text-end text-white text-sz">
+                    <a href="" class="mx-16">PRIVACY POLICY</a>
+                        <span>|</span>
+                    <a href="" class="mx-16">TERMS OF SERVICES</a>
+                    <span>|</span>
+                    <a href="" class="mx-16">CODE OF CONDUCT</a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="./js/bootstrap.js"></script>
 </body>
 
